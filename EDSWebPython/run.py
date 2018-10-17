@@ -11,7 +11,7 @@ web.logger.debug('lalalala')
 
 ds=datetime.datetime(2018,10,17)
 de=datetime.datetime(2018,10,18)
-tags={'07VT_LP01AO-03.MCR@GRARM','07VT_TW00AI-05.MCR@GRARM'}
+tags={'07VT_LP01AO-03.MCR@GRARM','07VT_TW00AI-05.MCR@GRARM' }
 
 reqId=None
 items=[]
