@@ -1,6 +1,7 @@
 from suds import client
 import logging
 import time
+import datetime
 import config
 import logging
 from logging import handlers
@@ -12,6 +13,7 @@ class EdsWebApi():
 		self.soap_cln = None
 		self.connected = False		
 		self.logger = self.initLogging()
+		self.out=self.initOut()
 
 	def initLogging(self):
 		logger = logging.getLogger('eds')
@@ -27,6 +29,20 @@ class EdsWebApi():
 		logger.debug('init')	
 		return logger
 
+	def initOut(self):
+		
+		
+		s='outEDS_{0}.txt'.format(time.time())
+		logger = logging.getLogger(s)
+		logger.setLevel("INFO")
+		if not os.path.exists('out'):
+			os.makedirs('out')
+		log_file = handlers.WatchedFileHandler("out/{0}".format(s))
+		log_formater = logging.Formatter('%(message)s')
+		log_file.setFormatter(log_formater)
+		logger.addHandler(log_file)	
+		logger.debug('init')	
+		return logger
 
 	def connect(self):		
 		eds_wsdl = '%s://%s:%i/eds.wsdl' % (config.EDS_WEB_PROTOCOL,config.EDS_HOST,config.EDS_WEB_PORT)

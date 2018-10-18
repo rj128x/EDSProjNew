@@ -20,7 +20,7 @@ for tag in tags:
 	item={
 		'function':'VALUE',
 		'pointId':{
-			'iess':tag
+			'iess':tag 
 			}
 		}
 	items.append(item)
@@ -49,4 +49,4 @@ for row in rows:
 		v=value['value'][0]
 		vs.append(v)
 	print(vs)
-	
+	s='{0};{1}'.format
