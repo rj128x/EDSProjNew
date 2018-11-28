@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>62c06df8-0e7e-4d74-8687-b7dc993c7e13</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>run.py</StartupFile>
+    <StartupFile>runBinary.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,7 +25,11 @@
     <Compile Include="config.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="run.py">
+    <Compile Include="runBinaryVal.py" />
+    <Compile Include="runPacked.py" />
+    <Compile Include="runBinary.py" />
+    <Compile Include="runFreq.py" />
+    <Compile Include="runTablular.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="webAPI.py">

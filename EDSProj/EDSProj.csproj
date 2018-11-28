@@ -45,15 +45,14 @@
     </Reference>
     <Reference Include="Infrastructure, Version=1.4.3.110, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\libs\MODESNEW\Infrastructure.dll</HintPath>
+      <HintPath>..\libs\MODES2018\BIN\Infrastructure.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\libs\MODESNEW\log4net.dll</HintPath>
+    <Reference Include="log4net">
+      <HintPath>..\libs\MODES2018\BIN\log4net.dll</HintPath>
     </Reference>
     <Reference Include="ModesApiExternal, Version=1.4.3.8, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\libs\MODESNEW\ModesApiExternal.dll</HintPath>
+      <HintPath>..\libs\MODES2018\BIN\ModesApiExternal.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
